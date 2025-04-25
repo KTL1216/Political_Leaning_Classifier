@@ -1,0 +1,27 @@
+# Core Libraries
+tensorflow==2.15.0
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+
+# NLP & Preprocessing
+nltk
+spacy
+beautifulsoup4
+
+# Reddit Scraping
+praw
+requests
+
+# Model Interpretability (Optional but useful)
+lime
+tf-explain
+
+# Jupyter Notebook Support
+jupyterlab
+tqdm
+
+# Optional: Wordcloud for EDA
+wordcloud
