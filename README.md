@@ -37,7 +37,7 @@ This project demonstrates the ability to infer **latent user attributes** (polit
 ├── reddit_scraper.ipynb         # Scrapes and preprocesses data from 4 subreddits
 ├── reddit_comments_clean.csv    # Final cleaned dataset (comment text + label)
 ├── lstm_classifier.ipynb        # TensorFlow LSTM model with training and prediction
-├── interpretability.ipynb       # (Optional) Explains model decisions using LIME
+├── interpretability.ipynb       # (Todo) Explains model decisions using LIME
 ├── README.md                    # You're here!
 ```
 
