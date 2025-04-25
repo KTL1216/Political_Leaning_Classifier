@@ -1,25 +1,23 @@
 
-# 🧠 Reddit Political Leaning Classifier
+# Reddit Political Leaning Classifier
 
-> A deep learning NLP project using TensorFlow to classify political ideology from Reddit comments — designed to showcase user modeling from behavioral data, similar to age prediction from browser history.
+> A deep learning NLP project using TensorFlow to classify political ideology from Reddit comments — designed to showcase user modeling from behavioral data.
 
 ---
 
-## 🧭 Overview
+## Overview
 
-This project demonstrates the ability to infer **latent user attributes** (political leaning: liberal or conservative) from natural language. It mirrors challenges like **predicting age or preferences from browsing patterns**, as found in real-world ML applications at companies like Google.
+This project demonstrates the ability to infer **latent user attributes** (political leaning: liberal or conservative) from natural language. 
 
-We:
 - Scrape Reddit discussions from political subreddits
 - Preprocess them using modern NLP techniques
 - Train a bidirectional LSTM model using TensorFlow
 - Balance biased data using `class_weight`
 - Evaluate accuracy and visualize learning curves
-- Interpret predictions using user input and LIME (optional extension)
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Component         | Library/Tool        |
 |------------------|---------------------|
@@ -33,7 +31,7 @@ We:
 
 ---
 
-## 📁 File Structure
+## File Structure
 
 ```
 ├── reddit_scraper.ipynb         # Scrapes and preprocesses data from 4 subreddits
@@ -45,46 +43,36 @@ We:
 
 ---
 
-## 🧪 Model Summary
+## Model Summary
 
 - Architecture: `Embedding → BiLSTM → Dense + Dropout → Sigmoid`
-- Achieves ~**85% validation accuracy** on real Reddit data
+- Achieves ~**75% validation accuracy** on real Reddit data
 - Balanced conservative/liberal data via `class_weight`
 - Accepts user-inputted sentences for real-time inference
 
 ---
 
-## 🤖 Example Use
+## Example Use
 
 ```python
 user_input = "We need stronger border security and less government spending."
 predict_user_input(user_input)
 
 # Output:
-# 🧠 Prediction: Conservative
-# 🔍 Confidence: 91.32%
+# Prediction: Conservative
+# Confidence: 91.32%
 ```
 
 ---
 
-## 🎯 Why This Matters
-
-Understanding user behavior from language — like classifying political leaning from comments or predicting **age from browser history** — is critical in areas like:
-- Personalized recommendations
-- Trust and safety
-- Demographic modeling
-- Behavioral clustering
-
-This project simulates that process in a transparent, reproducible way.
 
 ---
 
 ## 📌 Future Work
 
-- Add BERT-based transfer learning model (`transformers`)
 - Use LIME or Integrated Gradients for word-level explainability
-- Extend to other latent traits (e.g., age, education, stance detection)
-- Deploy as a live Streamlit web app
+- Getting context data for each poster of the user
+- Experiment with more models
 
 ---
 
