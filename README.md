@@ -26,7 +26,7 @@ This project demonstrates the ability to infer **latent user attributes** (polit
 | Modeling          | `TensorFlow 2` + Keras |
 | Tokenization      | `TextVectorization` |
 | Balancing         | `class_weight` from `sklearn` |
-| Evaluation        | Accuracy, LIME explanations |
+| Evaluation        | Accuracy
 | Environment       | Google Colab (GPU-accelerated) |
 
 ---
